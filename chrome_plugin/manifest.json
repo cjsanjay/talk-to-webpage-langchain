@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "ArmorBot: Intelligent Web Assistant",
+	"description": "Intelligent Web Q/A Assistant. Providing a support to talk with the page and see a summary of the web page",
+	"version": "1.0",
+	"author": "@armorblox",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
